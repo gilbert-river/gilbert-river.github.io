@@ -21,7 +21,7 @@ The scripts provide the following functionality:
 
 # Resources
 
-- [Instructions and scripts](https://github.com/gilbert-river/gilbert-river.github.io/_datasources/qgis-farm-dam/)
+- [Instructions and scripts](https://github.com/gilbert-river/gilbert-river.github.io/tree/main/_datasources/qgis-farm-dam)
 
 On this website:
 
