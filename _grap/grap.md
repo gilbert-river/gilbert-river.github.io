@@ -20,7 +20,7 @@ The transition of the land within the GRAP from grazing-dominated production to 
 The proposed <a href="/grap/green-hills-dam/">Green Hills Dam</a> would service the GRAP. The majority of land in the proposed GRAP are currently pastoral leases, where cattle is grazed on native pastures. However, there is some cropping currently occurring in the area, including mangoes, with many crops (e.g., rice, peanuts, cotton, mung beans, hay) being suggested showing potential in the region. There are current cropping trials occurring the GRAP, including table grapes and cotton among other crops. The CSIRO FGARA project analysed the land suitability of many crops in both the Gilbert and Flinders catchment, with the GRAP highlighted as a more suitable area for many crops than in other parts of the Gilbert catchment. 
 
 # Reports
-- Queensland Government (2009) <<a href="https://web.archive.org/web/20240712003709/https://www.etheridge.qld.gov.au/downloads/file/228/gilbert-river-scoping-study-june-09---smallpdf" target="_blank">Gilbert River agricultural precinct proposal</a>: Scoping brief on the proposed Gilbert River agricultural precinct, including a marketing and gross margin analysis prospective
+- Queensland Government (2009) <a href="https://web.archive.org/web/20240712003709/https://www.etheridge.qld.gov.au/downloads/file/228/gilbert-river-scoping-study-june-09---smallpdf" target="_blank">Gilbert River agricultural precinct proposal</a>: Scoping brief on the proposed Gilbert River agricultural precinct, including a marketing and gross margin analysis prospective
 - <a href="https://publications.csiro.au/rpr/pub?pid=csiro:EP1312941" target="_blank">Agricultural resource assessment for the Gilbert catchment (Petheram et al., 2013)</a>
 
 # Data
