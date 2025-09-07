@@ -1,0 +1,45 @@
+---
+layout: default
+permalink: /datasources/
+title: Data sources
+subtitle:
+---
+<div class="index_intro">
+<h1>Data sources</h1>
+
+The digital twin includes data on the following topics. A full listing of data sources is provided below.
+
+<ul>
+  <!-- <li><a href="../grap/places/">Places</a></li> --->
+  <li><a href="../grap/water-budget/">Water budget</a></li>
+  <li><a href="../grap/surface-water/">Surface water</a></li>
+  <li><a href="../grap/water-management/">Water management</a></li>
+  <li><a href="../grap/water-infrastructure/">Water infrastructure</a></li>
+  <li><a href="../grap/groundwater/">Groundwater</a></li>
+  <li><a href="../grap/ecological-assets/">Ecological assets</a></li>
+  <li><a href="../grap/vegetation/">Vegetation</a></li>
+  <li><a href="../grap/soils/">Soils</a></li>
+</ul>
+
+
+</div>
+
+<div class="posts">
+  {% assign datasources = site.datasources | sort_natural: "permalink" %} {% for post in
+    datasources %}
+  <article class="post">
+    {% if post.layout=="under-construction" or post.layout=="redirected" %}
+    <h1>{{ post.title }}</h1>
+    {% else %}
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      <h1>{{ post.title }}</h1>
+    </a>
+    {% endif %}
+    <div class="entry">{{ post.excerpt }}</div>
+
+    {% unless post.layout=="under-construction" or post.layout=="redirected" %}
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    {% endunless %}
+  </article>
+  {% endfor %}
+</div>

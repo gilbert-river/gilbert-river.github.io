@@ -1,0 +1,29 @@
+---
+layout: default
+permalink: /information-sharing2/
+title: Information sharing
+subtitle:
+---
+<div class="index_intro">
+Information sharing
+</div>
+
+<div class="posts">
+  {% assign pages = site.informationsharing | sort_natural: "permalink" %} {% for post in
+    pages %}
+  <article class="post">
+    {% if post.layout=="under-construction" or post.layout=="redirected" %}
+    <h1>{{ post.title }}</h1>
+    {% else %}
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      <h1>{{ post.title }}</h1>
+    </a>
+    {% endif %}
+    <div class="entry">{{ post.excerpt }}</div>
+
+    {% unless post.layout=="under-construction" or post.layout=="redirected" %}
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    {% endunless %}
+  </article>
+  {% endfor %}
+</div>

@@ -1,0 +1,45 @@
+---
+layout: default
+permalink: /grap/
+title: Gilbert River Agricultural Precinct Digital Twin
+subtitle:
+---
+<div class="index_intro">
+  <div class="rhs_img_container">
+    <div class="rhs_img_text" markdown="1">
+        The Digital Twin for the <a href="/grap/grap/">Gilbert River Agricultural Precinct</a> spans the properties along the Gilbert River from Green Hills to Chadshunt stations.
+        This is an area in which agricultural development has been pursued over many years, including through use of <a href="/grap/groundwater/">bedsands</a> in the <a href="/grap/gilbert-river">Gilbert River</a>, exploration of a possible <a href="/grap/green-hills-dam/">Green Hills Dam</a>, and <a href="/grap/etheridge-agricultural-precinct/">Etheridge Agricultural Precinct</a>.
+        </p>        
+    </div>
+    <div class="rhs_img_img">
+    <a href="/images/Rural_prop_AOI.png" target="_blank">
+      <img alt="Map of properties in the Gilbert River Agricultural Precinct" src="/images/Rural_prop_AOI.png">
+    </a>
+    <div class=imgcredit>Map of properties in the GRAP</a></div>
+    </div>
+  </div>
+
+  <p>
+    The index below lists the topics covered by the digital twin of the GRAP, in alphabetical order.
+  </p>
+</div>
+
+<div class="posts">
+  {% assign pages = site.grap | sort_natural: "permalink" %} {% for post in
+    pages %}
+  <article class="post">
+    {% if post.layout=="under-construction" or post.layout=="redirected" %}
+    <h1>{{ post.title }}</h1>
+    {% else %}
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      <h1>{{ post.title }}</h1>
+    </a>
+    {% endif %}
+    <div class="entry">{{ post.excerpt }}</div>
+
+    {% unless post.layout=="under-construction" or post.layout=="redirected" %}
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    {% endunless %}
+  </article>
+  {% endfor %}
+</div>

@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<article class="page">
+
+  <h1>{{ page.title }}</h1>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+  {% if page.last_updated %} 
+  <div class="imgcredit"><a href="/about/">Last updated</a>: {{page.last_updated}}</div>
+  {% endif %}
+</article>

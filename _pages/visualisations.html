@@ -1,0 +1,29 @@
+---
+layout: default
+permalink: /visualisations/
+title: Visualisations
+subtitle:
+---
+<div class="index_intro">
+Visualisations
+</div>
+
+<div class="posts">
+  {% assign visualisations = site.visualisations | sort_natural: "permalink" %} {% for post in
+    visualisations %}
+  <article class="post">
+    {% if post.layout=="under-construction" or post.layout=="redirected" %}
+    <h1>{{ post.title }}</h1>
+    {% else %}
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      <h1>{{ post.title }}</h1>
+    </a>
+    {% endif %}
+    <div class="entry">{{ post.excerpt }}</div>
+
+    {% unless post.layout=="under-construction" or post.layout=="redirected" %}
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    {% endunless %}
+  </article>
+  {% endfor %}
+</div>
